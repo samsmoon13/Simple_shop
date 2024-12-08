@@ -55,3 +55,4 @@ C:\Users\samin\Desktop\desktop\TUM\Professional Software Engineering\Assignment 
 C:\Users\samin\Desktop\desktop\TUM\Professional Software Engineering\Assignment 04\assignment4-main\assignment4-main\SimpleShop\obj\Debug\net6.0\SimpleShop.pdb
 C:\Users\samin\Desktop\desktop\TUM\Professional Software Engineering\Assignment 04\assignment4-main\assignment4-main\SimpleShop\obj\Debug\net6.0\SimpleShop.genruntimeconfig.cache
 C:\Users\samin\Desktop\desktop\TUM\Professional Software Engineering\Assignment 04\assignment4-main\assignment4-main\SimpleShop\obj\Debug\net6.0\ref\SimpleShop.dll
+C:\Users\samin\Desktop\desktop\TUM\Professional Software Engineering\Assignment 04\assignment4-main\assignment4-main\SimpleShop\obj\Debug\net6.0\SimpleShop.sourcelink.json

@@ -74,7 +74,14 @@ namespace SimpleShop
             PrintWelcome();
             var orders = ReadFileLineByLine(args[0]);
             Console.WriteLine("Invoices:");
-
+            var shopParser = new ShopParser();
+            foreach (var order in orders)
+            {
+                var pairs = ShopParser.ExtractFromTAG(shopParser, order);
+                shopParser.SetKeywords(pairs);
+            }
+            
+            
             //#############################################################################
             //# Code to modify starts here:
             //# (1) Setup the ShopParser

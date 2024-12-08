@@ -1,4 +1,18 @@
 namespace SimpleShop{
+
+    public class Company : Customer
+    {
+        public override decimal CalculatePrice(decimal basePrice){
+            return basePrice;
+        }
+    }
+
+    public class Student : Customer
+    {
+        public override decimal CalculatePrice(decimal basePrice){
+            return (1 + ValueAddedTax) *(basePrice-((decimal)0.2 * basePrice));
+        }
+    }
     
     public class Customer{
         public const decimal ValueAddedTax = 0.19m;
@@ -8,9 +22,23 @@ namespace SimpleShop{
         }
 
         public static Customer CreateCustomer(string name, string customerType=""){
-            Customer customer = new Customer();
-            customer.Name = name;
-            return customer;
+            if (customerType == "Company")
+            {
+                Company customer = new Company();
+                customer.Name = name;
+                return customer;
+            }
+            else if (customerType == "Student")
+            {
+                Student customer = new Student();
+                customer.Name = name;
+                return customer; 
+            }
+            
+            Customer customer1 = new Customer();
+            customer1.Name = name;
+            return customer1;
+            
         }
     }
 }
